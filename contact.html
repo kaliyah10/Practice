@@ -10,35 +10,11 @@
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Barrio|Chewy|Finger+Paint|Monoton|Permanent+Marker" rel="stylesheet">
-
-<!--
-// var slideIndex = 1;
-// showDivs(slideIndex);
-//
-// function plusDivs(n) {
-//   showDivs(slideIndex += n);
-// }
-//
-// function currentDiv(n) {
-//   showDivs(slideIndex = n);
-// }
-//
-// function showDivs(n) {
-//   var i;
-//   var x = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("demo");
-//   if (n > x.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = x.length}
-//   for (i = 0; i < x.length; i++) {
-//      x[i].style.display = "none";
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//      dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-//   }
-//   x[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " w3-opacity-off";
-// } -->
-
+<header class="w3-center w3-margin-bottom">
+  <h1><b>PHOTOLIO</b></h1>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">!!</button></p>
+</header>
+</div>
 
    <style>
    .front{
@@ -55,13 +31,22 @@ font-family: 'Barrio', cursive;
     color:yellow;
  text-align: center;
    }
-   h2,span{
+   h2{
      font-family: 'Barrio', cursive;
          color:yellow;
    }
     </style>
 
-
+    <script>
+  function myFunction() {
+      var x = document.getElementById("myGrid");
+      if (x.className === "w3-row") {
+          x.className = "w3-row-padding";
+      } else {
+          x.className = x.className.replace("w3-row-padding", "w3-row");
+      }
+  }
+  </script>
   </head>
   <body >
 <div id="page-wrap">
@@ -97,26 +82,58 @@ font-family: 'Barrio', cursive;
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Portfolio</a></li>
         </ul>
-      </div><!--/.nav-collapse -->
+      </div>
     </div>
   </nav>
 </div>
 
-<h1> Assortment Portfolio </h1>
+
+<div class ="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <h2> Graphic Designs </h2>
+    <img src="soda.jpg" style="width:50%">
+    <img src="pop.jpg" style="width:50%">
+    <img src="kaliyahA1.jpg" style="width:50%">
+    <img src="popart.jpg" style="width:50%">
+    <img src="kman1.png" style="width:50%">
+    <img src="liyah2.gif" style="width:50%">
+
+</div>
+
+<div class ="w3-third">
+  <h2> Self-Portraits </h2>
+    <img src="livingincolor.jpg" style="width:50%">
+    <img src="tati.JPG" style="width:50%">
+  <img src="DSCN0647.JPG" style="width:50%">
+  <img src="DSCN0878.JPG" style="width:50%">
+  <img src="DSCN0949.JPG" style="width:50%">
+  <img src="bw_orig.jpg" style="width:50%">
+
+</div>
+
+<div class ="w3-third">
+  <h2> Nature Photographs </h2>
+<img src="DSCN0495.JPG" style="width:50%">
+  <img src="trail.jpg" style="width:50%">
+<img src="bottom.jpg" style="width:50%">
+  <img src="flower.jpg" style="width:50%">
+  <img src="spider.jpg" style="width:50%">
+  <img src="red.jpg" style="width:50%">
+
+</div>
+</div>
+
+<p><b>© 2017-2018 KF, Inc. All rights reserved. Made In FL. .</b></p>
 
 
-    <div class="w3-content w3-section" style="max-width:500px">
+    <!-- <div class="w3-content w3-section" style="max-width:500px">
       <img class="mySlides" src="popart.jpg" style="width:100%">
       <img class="mySlides" src="soda.jpg" style="width:100%">
       <img class="mySlides" src="DOF1.jpg" style="width:100%">
-    </div>
-
-<h2>Info:</h2>
-<span> Variety of my photographs and graphic design work. </span>
+    </div> -->
 
 
-
-<footer>
+<!-- <footer>
   <script>
   var myIndex = 0;
   carousel();
@@ -137,7 +154,7 @@ font-family: 'Barrio', cursive;
 
 
 
-</footer>
+</footer> -->
 
 
 
